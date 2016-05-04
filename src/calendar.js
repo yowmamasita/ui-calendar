@@ -1,3 +1,4 @@
+var $ = require('jquery');
 /*
 *  AngularJs Fullcalendar Wrapper for the JQuery FullCalendar
 *  API @ http://arshaw.com/fullcalendar/
@@ -260,7 +261,7 @@ angular.module('ui.calendar', [])
 
         scope.initCalendar = function(){
           if (!calendar) {
-            calendar = angular.element(elm).html('');
+            calendar = $(elm);
           }
           calendar.fullCalendar(options);
           if(attrs.calendar) {
