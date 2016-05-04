@@ -1,3 +1,4 @@
+var $ = require('jquery');
 /*
 *  AngularJs Fullcalendar Wrapper for the JQuery FullCalendar
 *  API @ http://arshaw.com/fullcalendar/
@@ -8,7 +9,6 @@
 *
 */
 
-var $ = require('jquery');
 angular.module('ui.calendar', [])
   .constant('uiCalendarConfig', {calendars: {}})
   .controller('uiCalendarCtrl', ['$scope', 
